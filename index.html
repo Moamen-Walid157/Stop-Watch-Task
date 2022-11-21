@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="mydiv">.
+        <p class="title">STOP WATCH</p>
+        <div class="timer">
+            <div class="d1"><p class="count" id="min">0 min</p></div>
+            <div class="d2"><p class="count"> : </p></div>
+            <div class="d3"><p class="count" id="sec">0 sec</p></div>
+        </div>
+        <div class="btns">
+            <button class="btn" onclick="myTimer = setInterval(myFunction, 1000)">START</button>
+            <button class="btn" onclick="clearInterval(myTimer)">STOP</button>
+            <button class="btn" type="reset" onclick="reset() ">RESET</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
